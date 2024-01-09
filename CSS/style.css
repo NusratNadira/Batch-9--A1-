@@ -1,6 +1,6 @@
 *{
     text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Trirong", serif;
    margin: 0px;
    padding: 0px;
    box-sizing: border-box;
@@ -8,7 +8,10 @@
 
 .banner {
 
-background-image: url(/images/Banner\ Image.png);
+/* background-image: url(/images/Banner\ Image.png) , linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%)
+; */
+background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url(/images/Banner\ Image.png);
+
 text-align: center;
 color: rgb(228, 238, 234);
 background-repeat: no-repeat;
@@ -24,10 +27,7 @@ background-position: center;
 margin: 40px;
 }
 
-.banner::before{
-  position: absolute; 
-background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url(/images/Banner\ Image.png);
-}
+
 
 .cate {
     margin-top: 10px;
@@ -45,43 +45,36 @@ justify-content: center;
 }
 
 .party{
-    background-image: url(/images/Vectorrr.png);
+   background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url(/images/Vectorrr.png);
+   display: flex;
     color: aliceblue;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
-    padding: 25px;
-    border: 10px;
-    margin: 40px;
+    height:auto;
     background-position: center;
     border-radius: 16px;
-    justify-content: center;
     margin-top: 100px;
-    /* position: absolute; */
-position: relative;
+   margin: 40px;
 }
 
-
+.party .text{
+   padding: 40px;
+margin: 20px;
+}
 .party h1{
-    font-size: 60px;
-     
+    font-size: 45px;     
 }
 
 .party p{
-font-size: 25px;
+font-size: 20px;
 }
 
-.image{
-    position: absolute;
-display: flex;
-flex-direction: column;
-justify-content: center;
-top: 50px;
-left: 550px;
+.party .image{
+   padding: 30px;
 }
 
 .time{
-    background: linear-gradient(180deg, #ef98cb 0%, rgba(7, 2, 17, 0.00) 100%);
+background: linear-gradient(180deg, #ef98cb 0%, rgba(7, 2, 17, 0.00) 100%);
 align-items: center;
 text-align: center;
 padding-top: 100px;
@@ -91,46 +84,45 @@ margin: 40px;
 margin-top: 100px;
 line-height: 50px;
 }
-.btn{
+.time .btn{
     background-color: red;
     color: aliceblue;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 5px;
+margin-top: 20px;
+padding: 5px;
 }
 
 .container{
-    display: flex;
+    display:flex;
     margin: 40px;
-padding-top: 200px;
-font-size: 35px;
+padding-top: 150px;
+font-size: 30px;
 margin-top: 100px;
+
 }
 
-.container .content1{
-   padding: 5px;
-   padding-right: 45px;
-   padding-top: 10px;
+.container .content1 , .content2{
+   padding: 50px;
+   
 }
-.container .content2{
-    padding-top: 10px;
-    padding-left: 45px;
- }
+
 
  .container .circle{
     border: 10px solid red;
     border-radius: 50%;
   padding: 20px;
-  align-items: center;
+  align-items: center; 
+text-align: center;
  }
 
  .sale{
-    font-family: sans-serif;
+   
     align-items: center;
     text-align: center;
-    
     margin: 40px;
     margin-top: 100px;
-    line-height: 60px;
+   
  }
 
 .sale .sale-content h3{
@@ -144,10 +136,6 @@ font-weight: 700;
     font-size: 20px;
 }
 
- /* .sale .sale-image{
-    display: flex;
- } */
-
  .img4{
     position: relative;
  /* padding-top: 10px; */
@@ -157,30 +145,30 @@ position: absolute;
 z-index: 1000;
 
  }
+ 
  .img2{
     position: absolute;
 
  }
- .img3{
-    position: relative;
-    /* padding-left: 200px; */
-
- }
+ 
  .same{
     padding-left: 900px;
     
  }
 
  /* kisu kaj baki ase */
+
  .catalog{
     margin: 40px;
     margin-top: 100px;
+
  }
 
- .text{
+ .catalog .text{
     text-align: justify;
     margin-bottom: 20px;
     font-size: 25px;
+
  }
   .cat-image{
     display: grid;
@@ -209,7 +197,7 @@ border-radius: 16px;
     border-radius: 50px 0px 0px 50px;
     padding: 20px ;
  padding-right: 150px;
- background: rgb(242, 242, 223);
+ background: rgb(243, 243, 232);
 color: gray;
  }
  .txt button{
@@ -226,24 +214,31 @@ color: gray;
     color: white;
     padding: 40px;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 60px;
+ 
  }
 
  footer .div1{
    display: flex;
-   /* gap: 40rem; */
    margin-top: 20px;
+   justify-content: space-between;
+margin-bottom: 60px;
  }
 
  .div2{
     align-items: center;
    text-align: center;
-  margin: 50px;
+  /* margin: 60px; */
  }
 
+ .div2:hover{
+ border-top: 1px solid blue;
+ border-bottom: 1px solid blue;
+
+ }
  .div3{
     display: flex;
-    gap: 40rem;
-    margin: 40px;
+    justify-content: space-between;
+    margin-top: 60px;
    
  }
